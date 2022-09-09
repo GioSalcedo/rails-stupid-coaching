@@ -1,5 +1,7 @@
-<h1>Stupid Coachings</h1>
-<h2> <%= @question %> </h2>
-<h2> <%= @answer %> </h2>
+<div class="card">
+<h1 class="text-center">Stupid Coachings</h1>
+<h2 class="text-center">Your question: <%= @question %> </h2>
+<h2 class="text-center"> Coach's response: <%= @answer %> </h2>
 
-<%= link_to "Ask another question", ask_path %>
+<button type="submit" class="btn btn-outline-primary"> <%= link_to "Ask another question", ask_path %> </button>
+</div>
